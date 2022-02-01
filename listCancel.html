@@ -112,10 +112,8 @@
               <td>3</td>
               <td>01/02/2022</td>
               <td>Deluxe</td>
-              <td>Active</td>
-              <td><button type="button" class="btn btn-primary" onclick="window.location.href='viewLogin.html'">View</button>
-              <button type="button" class="btn btn-danger" onclick="cancelBooking()">Cancel Booking</button>
-            </td>
+              <td>Cancelled</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -129,7 +127,7 @@
     function cancelBooking() {
       let text;
       if (confirm("Are you sure to cancel booking?") == true) {
-        location.href ='listCancel.html';
+        location.href ='listCancel';
       } else {
         return;
       }

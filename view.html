@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>De Rhu Beach Resort</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning bg-dark" href="index.html">De Rhu Beach Resort</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <br><br>
+
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="assets/favicon.png" alt="" width="72" height="72">
+      <h2>Booking Successful</h2>
+      <p class="lead"></p>
+    </div>
+
+    <div class="row g-5" style="padding-left: 500px;">
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Hostel Information</h4>
+        <form class="needs-validation" novalidate action="view.html">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="checkindate" class="form-label">Check In</label>
+              <input type="text" class="form-control" id="checkindate" value="1/2/2022" readonly>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="checkoutdate" class="form-label">Check Out</label>
+              <input type="text" class="form-control" id="checkoutdate" value="2/2/2022" readonly>
+            </div>
+
+            <div class="col-12">
+              <label for="roomtype" class="form-label">Room Type</label>
+              <input type="text" class="form-control" id="roomtype" value="Deluxe" readonly>
+            </div>
+
+            <div class="col-12">
+              <label for="noroom" class="form-label">Number Of Room</label>
+              <input type="text" class="form-control" id="noroom" value="2" readonly>
+            </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Customer Information</h4>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" value="Ahmad Ali" readonly>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" value="Aziz" readonly>
+            </div>
+
+            <div class="col-12">
+              <label for="phoneno" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phoneno" value="+6011-34355333" readonly>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" value="aliaziz@gmail.com" readonly>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" value="No 3, Jalan Pelita" readonly>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" value=" " readonly>
+            </div>
+
+            <div class="col-md-5">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" value="Johor Bahru" readonly>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <input type="text" class="form-control" id="state" value="Johor" readonly>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" value="81700" readonly>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <h4>Easy Check-In</h4>
+          <span>*Easy with just show this QR-Code during check-in. This QR-Code also available in your email.</span>
+          <img src="assets/images/qr.jpg" style="max-width: 30%; height: auto;">
+        </form>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

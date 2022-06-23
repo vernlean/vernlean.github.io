@@ -4097,7 +4097,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
-		() => 15,
+		() => 600,
 		() => -5
 ];
 

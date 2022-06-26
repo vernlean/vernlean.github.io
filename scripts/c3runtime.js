@@ -3906,7 +3906,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.Touch.Cnds.CompareOrientation,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject
 	];
@@ -4072,12 +4071,14 @@ self.C3_ExpressionFuncs = [
 		() => "step",
 		() => "idle",
 		() => "jump",
+		() => "",
 		() => "fall",
 		() => -550,
 		() => 5,
-		() => "",
 		() => 0.1,
 		() => 1,
+		() => 128,
+		() => 248,
 		() => "left",
 		() => "right",
 		() => 100,
@@ -4093,6 +4094,7 @@ self.C3_ExpressionFuncs = [
 		() => 2,
 		() => "2",
 		() => "1",
+		() => -2,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
